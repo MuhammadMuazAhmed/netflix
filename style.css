@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: url("pics/PK-en-20240701-POP_SIGNUP_TWO_WEEKS-perspective_WEB_4a0aded4-19f1-4fd7-b6ba-f65282911095_medium.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+header .overlay {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 80vw;
+  height: 62px;
+  margin: auto;
+  align-items: center;
+  position: relative;
+  top: 20px;
+  padding: 20px;
+}
+
+nav span img {
+  height: 40px;
+  position: relative;
+  z-index: 10;
+}
+
+nav div button {
+  margin: 5px;
+  padding: 10px 10px;
+  font-weight: bold;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  background-color: red;
+  position: relative;
+  z-index: 10;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  gap: 23px;
+  padding: 30px;
+}
+
+.container > :first-child {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 900;
+  font-size: 45px;
+  text-align: center;
+}
+
+.container:nth-child(2) {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.container:nth-child(3) {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+.red {
+  background-color: red;
+  color: white;
+  padding: 12px 48px 12px 36px;
+  border-radius: 4px;
+  border: none;
+  text-align: left;
+  font-size: 24px;
+  position: relative;
+}
+.red svg {
+  position: absolute;
+  top: 12px;
+}
+div input {
+  background-color: rgba(23, 23, 23, 0.2);
+  color: white;
+  padding: 16px 60px 11px 8px;
+  border-radius: 4px;
+  border: 1px solid gray;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.line {
+  height: 8px;
+  background-color: gray;
+  position: relative;
+  opacity: 0.2;
+  top: -62px;
+}
+
+.arrow {
+  margin-left: 6px;
+}
+
+.first {
+  display: flex;
+  justify-content: center;
+  max-width: 70vw;
+  margin: auto;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.secImg {
+  position: relative;
+}
+
+.secImg img {
+  width: 555px;
+  position: relative;
+  z-index: 10;
+}
+
+.secImg video {
+  position: absolute;
+  top: 51px;
+  right: 0;
+  width: 555px;
+}
+
+section.first > div {
+  display: flex;
+  flex-direction: column;
+  padding: 34px 0;
+}
+
+section.first > div :nth-child(1) {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+section.first > div :nth-child(2) {
+  font-size: 24px;
+}
+.linea {
+  margin-top: 20px;
+  height: 8px;
+  background-color: gray;
+  position: relative;
+  opacity: 0.2;
+}
+.faq h1 {
+  text-align: center;
+  font-size: 48px;
+}
+
+.faq {
+  background: black;
+  color: white;
+  padding: 34px;
+}
+.faq-box:hover {
+  background: red;
+  color: white;
+}
+
+.faq .faq-box {
+  transition: all 1ms ease-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 70vw;
+  margin: 20px auto;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: white;
+  background-color: rgb(37, 36, 36);
+  padding: 24px;
+}
+footer {
+  color: white;
+  max-width: 85vw;
+  margin: auto;
+  padding: 0px 60px 60px 60px;
+  position: relative;
+  top: -10px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+.footer a {
+  color: white;
+}
+
+footer .questions {
+  padding: 34px 0;
+  color: white;
+  text-decoration: none;
+}
+footer .questions a {
+  color: white;
+  opacity: 0.7;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+  opacity: 0.7;
+}
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.footer-item div button {
+  margin: 5px;
+  padding: 6px 10px;
+  font-weight: bold;
+  color: white;
+  border-radius: 4px;
+  border: 2px solid rgb(195, 185, 185);
+  background-color: transparent;
+  position: relative;
+  z-index: 10;
+}
+.footer-item div button > :first-child {
+  position: relative;
+  left: -4px;
+  padding-left: 2px;
+}
+.netflix {
+  margin-top: 8px;
+  padding-top: 4px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+  left: 5px;
+}
+
+@media screen and (max-width: 1300px) {
+  nav {
+    max-width: 90vw;
+  }
+
+  .first {
+    flex-wrap: wrap;
+  }
+
+  .secImg img {
+    width: 305px;
+  }
+
+  .secImg video {
+    width: 305px;
+  }
+
+  .container > :nth-child(1) {
+    font-size: 32px;
+  }
+
+  .container > :nth-child(2) {
+    font-size: 18px;
+  }
+
+  .container > :nth-child(3) {
+    font-size: 18px;
+  }
+
+  .container-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .faq h2 {
+    text-align: center;
+    font-size: 32px;
+  }
+
+  footer {
+    max-width: 90vw;
+    padding: 75px 0;
+  }
+
+  .footer-item {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+}
+
+.footer a {
+  font-size: 14px;
+  color: white;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
